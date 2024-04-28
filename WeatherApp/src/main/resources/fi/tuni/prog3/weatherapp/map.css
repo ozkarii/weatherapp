@@ -1,0 +1,20 @@
+#map {
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 438;
+    height: 351
+}
+
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.olControlAttribution {
+    font-size: smaller !important;
+    bottom: 0px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}

@@ -1,0 +1,72 @@
+/WeatherApp/target/
+# Never push bytecode to the repository.
+*.class
+build-*
+*.o
+local_configurations.py
+html/
+!build*.py
+/round2/mean/target/
+# Maven target directory
+target/
+
+# Eclipse IDE files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA files
+.idea/
+
+# NetBeans IDE files
+nb-configuration.xml
+
+# Maven build files
+pom.xml.backup*
+release.properties
+pom.xml.releaseBackup
+
+# Compiled bytecode
+*.class
+
+# Maven wrapper
+.mvn/
+
+# Log files
+log/
+log/*
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Maven-specific files
+*.iml
+mvnw
+mvnw.cmd
+
+# Eclipse-specific files
+/.metadata
+
+# Gradle files
+.gradle/
+
+# IntelliJ IDEA-specific files
+*.iml
+.idea/
+
+# VS Code files
+.vscode/
+
+# Spring Boot config file
+/application.properties
+/application.yml
+/round11/junitattainment/nbproject/
+/round11/junitorder/nbproject/
+/WeatherApp/nbproject/
+
+

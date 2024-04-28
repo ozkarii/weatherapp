@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="312.0" prefWidth="70.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.prog3.weatherapp.HourBoxController">
+   <children>
+      <Text fx:id="date" fill="#3b3b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="date" textAlignment="CENTER" wrappingWidth="65.60003662109375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fill="#3b3b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="time" textAlignment="CENTER" wrappingWidth="67.20001220703125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="70.0" prefWidth="108.0">
+         <children>
+            <ImageView fx:id="weatherIcon" fitHeight="66.0" fitWidth="66.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.7368420958518982" blue="0.7368420958518982" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <image>
+                  <Image url="@weather_icons/13d.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="54.0">
+         <children>
+            <Text fx:id="temp" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="200 .C" textAlignment="CENTER" wrappingWidth="64.99998426437378">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <StackPane prefHeight="58.0" prefWidth="98.0">
+         <children>
+            <ImageView fx:id="feelsLikeIcon" fitHeight="50.0" fitWidth="40.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <image>
+                  <Image url="@ui_icons/person.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="feelsLike" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateX="-1.0" translateY="10.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="50.0" prefWidth="71.0" translateY="8.0">
+         <children>
+            <ImageView fx:id="windDirIcon" fitHeight="58.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust contrast="-0.56" />
+               </effect>
+               <image>
+                  <Image url="@ui_icons/wind.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="windSpd" fill="#3b3b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="59.0" prefWidth="69.0">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6315789222717285" green="0.6315789222717285" blue="0.6315789222717285" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <image>
+                  <Image url="@ui_icons/rain.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="precipAmount" fill="#3b3b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="20 mm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" radius="4.75" width="0.0">
+                     <color>
+                        <Color red="1.0" green="0.9555555582046509" blue="0.9555555582046509" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
